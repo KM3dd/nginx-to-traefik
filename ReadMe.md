@@ -7,7 +7,7 @@ I propose a two-phase solution for a less stressful transition:
 
 - **Phase 1 :** Stop the bleeding and migrate immediately to the Traefik Ingress Controller, why ? traefik is often simpler, allows for faster adaptation and migration, and more important it supports many Nginx annotations natively via its Kubernetes Ingress Provider. Only minimal configuration adaptations are typically required.
 
-  **_NOTE:_**  (please check [This section]([#Annotation-Replacement-Map:-Nginx-Annotations-to-Traefik-CRDs](https://github.com/KM3dd/nginx-to-traefik?tab=readme-ov-file#annotation-replacement-map-nginx-annotations-to-traefik-crds)) to check unsupported annotations and how to adapt them before applying anything in this tutorial)
+  **_NOTE:_**  (please check [This section](https://github.com/KM3dd/nginx-to-traefik?tab=readme-ov-file#annotation-replacement-map-nginx-annotations-to-traefik-crds) to check unsupported annotations and how to adapt them before applying anything in this tutorial)
 - **Phase 2 :** Plan the Gateway API adoption on your team's timeline, free from end of life pressure. Assess readiness, test thoroughly during normal sprint cycles, and implement the new approach when business conditions are optimal. One problem at a time.
 
 This Tutorial covers the first phase of the migration
